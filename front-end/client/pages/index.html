@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en, pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../components/CSS/style.css">
+    <title>Loja de Brindes</title>
+</head>
+
+<body>
+
+<!-- ---------------------------------------------- -->
+    <!-- CADASTRO DE PRODUTOS -->
+<!-- ---------------------------------------------- -->
+
+    <header>
+        <div class="cabeçalho_cadastro">
+            <h1>Cadastrar Produtos</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="input_cadastro">
+            <div class="input_escolha_texto">
+                <p>Nome</p>
+                <input class="text-input" id="newProduct" type="text" placeholder="Digite o nome do produto..">
+            </div>
+            <div class="input_escolha_texto">
+                <p>Categoria</p>
+                <input class="text-input" id="newCategory" type="text" placeholder="Digite a categoria do produto..">
+            </div>
+            <div class="input_escolha_texto">
+                <p>Quantidade</p>
+                <input class="text-input" id="newQuantity" type="text" placeholder="Digite a quantidade do produto..">
+            </div>
+            <div class="input_escolha_texto">
+                <p>Valor</p>
+                <input class="text-input" id="newPrice" type="text" placeholder="Digite o valor por unidade do produto..">
+            </div>
+            <button class="btn-adc-item" onclick="newItem()">Adicionar</button>
+        </div>
+    </section>
+
+<!-- ---------------------------------------------- -->
+    <!-- CATÁLOGO DE PRODUTOS -->
+<!-- ---------------------------------------------- -->
+
+    <header>
+        <div class="cabeçalho_catalogo">
+            <h1>Catálogo</h1>
+        </div>
+    </header>
+    
+    <section class="conteiner1_produto_carrinho">
+        <table id="myTable">
+            <tr>
+                <th><h3>Nome</h3></th>
+                <th><h3>Categoria</h3></th>
+                <th><h3>Quantidade</h3></th>
+                <th><h3>Valor</h3></th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+<!-- ---------------------------------------------- -->
+    <!-- BUSCA DE PRODUTOS POR CATEGORIA -->
+<!-- ---------------------------------------------- -->
+    <header>
+        <div class="cabeçalho_busca">
+            <h1>
+                Buscar Produto
+            </h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="busca_produto">
+            <input type="text" id="buscaCategoria" placeholder="Digite a categoria para buscar">
+            <button onclick="buscarCategoria()">Buscar</button>
+        </div>
+        <table id="resultado" class="hidden">
+                <tr>
+                    <th><h3>Nome</h3></th>
+                    <th><h3>Categoria</h3></th>
+                    <th><h3>Quantidade</h3></th>
+                    <th><h3>Valor</h3></th>
+                </tr>
+        </table>
+    </section>
+
+    <script src="../components/interface/scripts.js"></script>
+</body>
+</html>

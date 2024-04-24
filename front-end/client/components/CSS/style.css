@@ -1,0 +1,117 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(70.15deg, #0d38d4 20.62%, #205a91 70.61%);      
+    background: linear-gradient(90deg, rgb(31, 112, 124) 10%, rgb(26, 68, 79) 53%, rgb(54, 96, 118) 100%);
+}
+
+html {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 'Courier New', Courier, monospace;
+}
+
+
+
+th, tr {
+    text-align: center;
+    padding: 12px 8px 12px 10px;
+    transition: 0.2s;
+}
+
+td {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+table {
+    margin: 10px;
+    letter-spacing: 1px;
+    background-size: 100% auto;
+    height: 30vh;
+    width: 80vw;
+    border-radius: 10px;
+    background-color: rgb(152, 152, 152);
+    margin-bottom: 10px;
+}
+
+span.close:hover {
+    color: #d40d0d;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    margin-bottom: 20px;
+}
+
+/* Estilo do cabeçalho da parte do Cadastro de Produtos */
+.cabeçalho_cadastro {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(152, 152, 152);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Estilo do cabeçalho da parte de Busca de Produtos po Categorias */
+.cabeçalho_busca {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(152, 152, 152);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.busca_produto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Estilo do cabeçalho do catálogo (Lista) */
+.cabeçalho_catalogo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(152, 152, 152);
+    border-radius: 10px;
+    height: 10vh;
+}
+
+.input_cadastro {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.conteiner1_produto_carrinho {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-adc-item {
+    height: 5vh;
+    margin-top: 37px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.btn-adc-item:hover {
+    background-color: darkgrey;
+}
