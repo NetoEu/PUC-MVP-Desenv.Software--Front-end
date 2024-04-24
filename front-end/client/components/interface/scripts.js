@@ -63,7 +63,7 @@ const postItem = async (inputProduct, inputCategory, inputQuantity, inputPrice) 
     formData.append('quantidade', inputQuantity);
     formData.append('valor', inputPrice);
 
-    let url = 'http://127.0.0.1:5000/produto'
+    let url = 'http://127.0.0.1:5000/adicionar_produto'
     fetch(url, {
         method: 'post',
         body: formData
@@ -118,7 +118,7 @@ const removeElement = () => {
 
 const deleteItem = (item) => {
     console.log(item)
-    let url = 'http://127.0.0.1:5000/produto?nome=' + item;
+    let url = 'http://127.0.0.1:5000/deletar_produto?nome=' + item;
     fetch(url, {
       method: 'delete'
     })
